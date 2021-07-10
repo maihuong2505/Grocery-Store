@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="hcmute.edu.vn.mssv18110298">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:backupInForeground="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Grocery Store"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject">
+        <activity android:name=".Activity.ForgetPwdActivity"></activity>
+        <activity android:name=".Activity.RegisterActivity"></activity>
+        <activity android:name=".Activity.HomepageActivity"></activity>
+        <activity android:name=".Activity.InformationActivity"></activity>
+        <activity android:name=".Activity.RegisterConfirmActivity"></activity>
+        <activity android:name=".Activity.CartActivity"></activity>
+        <activity android:name=".Activity.ForgetPwdAuthActivity"></activity>
+        <activity android:name=".Activity.ProductActivity"></activity>
+        <activity android:name=".Activity.ResetPwdCompleteActivity"></activity>
+        <activity android:name=".Activity.ResetPwdActivity"></activity>
+        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.CompleteOrderActivity"></activity>
+        <activity android:name=".Activity.DetailProductActivity"></activity>
+        <activity android:name=".Activity.ChangepwdActivity"></activity>
+        <activity android:name=".Activity.HelloActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BillActivity" />
+    </application>
+
+</manifest>
